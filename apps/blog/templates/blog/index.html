@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Microblogs</title>
+  </head>
+  <body>
+    <form action="user" method="post">
+      {% csrf_token %}
+      <p>
+        Username: <input type="text" name="username">
+      </p>
+      <input type="submit" value="Login">
+    </form>
+
+  </body>
+</html>

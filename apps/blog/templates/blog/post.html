@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Posts</title>
+  </head>
+  <body>
+    <h1>Hello {{request.session.username}}</h1>
+    <h3>Post a message</h3>
+    <form action="/createmessage" method="post">
+      {% csrf_token %}
+      <textarea name="comment" rows="8" cols="100"></textarea>
+      <p>
+        <input type="submit" value="POST">
+      </p>
+
+    </form>
+  </body>
+</html>
